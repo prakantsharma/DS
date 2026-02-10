@@ -1,47 +1,58 @@
-# this file contains the logic and the code for zig_zag the linked list.
+# Zig-Zag Linked List
 
+**Problem:**  
+Rearrange a singly linked list in zig-zag order.
 
-``` java implementation :
+**Example:**  
+`1 → 2 → 3 → 4 → 5 → 6 → null`  
+`1 → 6 → 2 → 5 → 3 → 4 → null`
 
+**Approach:**  
+1. Find the middle using slow–fast pointers  
+2. Reverse the second half of the list  
+3. Merge both halves alternately  
 
-public void zigZag()
-{
-    @1. find the mid node of the linked list
-    Node slow=head;
-    Node fast=head;
-    while(fast!=null && fast.next!=null){
-        slow=slow.next;
-        fast=fast.next.next;
+**Java Code:**
+```java
+public void zigZag() {
 
+    Node slow = head;
+    Node fast = head;
+
+    // Find middle
+    while (fast != null && fast.next != null) {
+        slow = slow.next;
+        fast = fast.next.next;
     }
-    Node mid=slow;
 
-    @2. reverse the second half of the linkedlist
-    Node curr=mid.next;
-    mid.next=null;
-    Node prev=null;
+    Node mid = slow;
+
+    // Reverse second half
+    Node curr = mid.next;
+    mid.next = null;
+    Node prev = null;
     Node next;
-    while(next!=null)
-    {
-        next=curr.next;
-        curr.next=prev;
-        prev=curr;
-        curr=next;
-    }
-    Node left=head;
-    Node right=prev;
-    Node nextL,nextR;
 
-    @3 alternate merge
-    while(left!=null && right!=null){
-        nextL=left.next;
-        left.next=right;
-        nextR=right.next;
-        right.next=nextL;
-
-        left=nextL;
-        right=nextR;
-
+    while (curr != null) {
+        next = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next;
     }
 
+    // Zig-zag merge
+    Node left = head;
+    Node right = prev;
+    Node nextL, nextR;
+
+    while (left != null && right != null) {
+        nextL = left.next;
+        left.next = right;
+
+        nextR = right.next;
+        right.next = nextL;
+
+        left = nextL;
+        right = nextR;
+    }
 }
