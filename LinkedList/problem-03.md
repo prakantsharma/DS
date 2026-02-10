@@ -1,4 +1,6 @@
 # this file contains the logic and the code for zig_zag the linked list.
+
+
 public void zigZag()
 {
     @1. find the mid node of the linked list
@@ -36,7 +38,7 @@ public void zigZag()
 
         left=nextL;
         right=nextR;
-        
+
     }
 
 }
