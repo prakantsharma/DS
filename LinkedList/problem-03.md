@@ -32,7 +32,7 @@ public void zigZag()
     Node right=prev;
     Node nextL,nextR;
 
-    @3 alternate image
+    @3 alternate merge
     while(left!=null && right!=null){
         nextL=left.next;
         left.next=right;
