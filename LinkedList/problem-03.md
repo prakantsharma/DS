@@ -1,7 +1,10 @@
 # this file contains the logic and the code for zig_zag the linked list.
 
 
-```public void zigZag()
+``` java implementation :
+
+
+public void zigZag()
 {
     @1. find the mid node of the linked list
     Node slow=head;
@@ -41,4 +44,4 @@
 
     }
 
-}```
+}
