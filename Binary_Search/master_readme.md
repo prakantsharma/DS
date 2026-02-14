@@ -77,4 +77,4 @@ Simple to implement
 -Competitive programming
 -Finding lower/upper bounds
 -Searching in rotated sorted arrays
--Binary search on answer problem
+-Binary search on answer problems
