@@ -43,6 +43,7 @@ while low <= high:
 
 return -1
 
+```
 
 ⏱️ Time Complexity
 Case	Complexity
