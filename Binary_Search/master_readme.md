@@ -26,6 +26,8 @@ Instead of checking every element, it repeatedly divides the search space in hal
 
 ## 🧠 Algorithm (Iterative)
 
+
+```
 BinarySearch(arr, key):
 low = 0
 high = length(arr) - 1
