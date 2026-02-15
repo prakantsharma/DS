@@ -1,3 +1,7 @@
+/**
+ * This Java class provides methods to find the lower bound and upper bound of an element in a sorted
+ * array.
+ */
 // lower bound and upper bound of an element
 public class Problem_01
 {
