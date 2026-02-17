@@ -68,3 +68,73 @@ push(30)
 
 pop() → 30
 peek() → 20
+
+---
+
+## ⏱️ Time Complexity
+
+| Operation | Time Complexity |
+|------------|----------------|
+| Push | O(1) |
+| Pop | O(1) |
+| Peek | O(1) |
+| Search | O(n) |
+
+### Space Complexity:  
+`O(n)`
+
+---
+
+## 🚨 Stack Errors
+
+- **Stack Overflow** → Pushing into a full stack
+- **Stack Underflow** → Popping from an empty stack
+
+---
+
+## 💡 Applications of Stack
+
+- Function calls & Recursion
+- Undo/Redo functionality
+- Expression Evaluation (Infix, Postfix, Prefix)
+- Parenthesis Validation
+- Backtracking Algorithms
+- Browser History
+- DFS (Depth First Search)
+
+---
+
+## 🧩 Common Interview Problems
+
+- Reverse a String using Stack
+- Valid Parentheses
+- Next Greater Element
+- Stock Span Problem
+- Infix to Postfix Conversion
+- Evaluate Postfix Expression
+
+---
+
+
+---
+
+## 🎯 Why Learn Stack?
+
+- Foundation of Data Structures
+- Important for Coding Interviews
+- Helps in understanding Recursion
+- Frequently used in Competitive Programming
+
+---
+
+## 📌 Conclusion
+
+The **Stack Data Structure** is simple yet powerful.  
+Mastering it strengthens your problem-solving skills and builds a strong DSA foundation.
+
+---
+
+### ⭐ If you found this helpful, consider giving the repository a star!
+Happy Coding 🚀
+
+
