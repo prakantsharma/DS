@@ -1,4 +1,4 @@
-// Queue using 2 stacks 
+// Queue using 2 stacks :
 import java.util.*;
 
 public class implementation_03
@@ -42,7 +42,7 @@ public class implementation_03
         q.add(3);
         while(!q.isEmpty()){
             System.out.println(q.peek());
-            q.remove();
+            q.remove();:
         }
 
         
